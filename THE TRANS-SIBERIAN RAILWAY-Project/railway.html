@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iframes</title>
+    <link
+      rel="stylesheet"
+      href="https://code.s3.yandex.net/web-code/normalize.css"
+    />
+    <link rel="stylesheet" href="railway.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__title-container">
+            <h1 class="header__title">
+              The Trans-Siberian Railway: the world's longest railroad journey
+            </h1>
+            <p class="header__description">
+              Vladivostok, Khabarovsk, Izhevsk, Moscow — 18 days en route in
+              total. This is how musician David Bowie traveled to Europe after
+              his tour of Japan in the spring of 1973. Bowie had a fear of
+              flying, so he took the train.
+            </p>
+          </div>
+          <div class="header__counter-container">
+            <div class="header__counter header__counter_type_km">
+              <span class="header__counter-value" id="counter-km">0</span>
+              km.
+            </div>
+            <div class="header__counter header__counter_type_days">
+              <span class="header__counter-value" id="counter-days">0</span>
+              days.
+            </div>
+            <div class="header__audio-container"></div>
+          </div>
+        </div>
+      </header>
+      <section class="cities">
+        <div class="cities__container">
+          <div class="cities__city" id="city-kostroma">
+            <div
+              class="cities__video-container cities__video-container_name_kostroma"
+            ></div>
+            <p class="cities__text">
+              First, you see the familiar landscapes of the European part of
+              Russia: fields, cottages, villages, woods, and power lines. It
+              feels almost like travelling through the land of the hobbits, or
+              into the past, back to 1973; if feels like David Bowie could walk
+              in from the next compartment at any moment wearing a Japanese
+              kimono and bright pants.
+            </p>
+          </div>
+          <div class="cities__city" id="city-yekaterinburg">
+            <div
+              class="cities__video-container cities__video-container_name_yekaterinburg"
+            ></div>
+            <p class="cities__text">
+              It's time to get into your element. In Kostroma, you get off the
+              train and buy all the things you forgot to pack: instant coffee,
+              instant noodles, and a six pack of beer. Now make yourself
+              comfortable. We're not even halfway there yet.
+            </p>
+          </div>
+          <div class="cities__city" id="city-omsk">
+            <div
+              class="cities__video-container cities__video-container_name_omsk"
+            ></div>
+            <p class="cities__text">
+              Your journey has transcended the physical realm and moved into the
+              spiritual. This mystical experince of immersing yourself in the
+              depths of Russia's soul will stay with you forever. Europe is far
+              behind, and Asia is still lightyears away. You may even have been
+              stationary this whole time. You've lost the count of how many
+              miles you've traveled, and now you're not even sure if train is
+              moving at all. On the other hand, if you look out the window for a
+              long time (to be honest, there's not much else to do), you can see
+              ancient mammoths of past millenia wandering these plains.
+            </p>
+          </div>
+          <div class="cities__city" id="city-yablonoi-pereval">
+            <div
+              class="cities__video-container cities__video-container_name_yablonoi-pereval"
+            ></div>
+            <p class="cities__text">
+              You're now at the very heart of the continent, and there's no sign
+              of either ancient civilizations, or of Europe and Asia. Here the
+              train passes through the highest point of the Trans-Siberian
+              Railway, and the path to the sea begins. Before, the road narrowed
+              here to one track and went through a tiny tunnel, the entrance to
+              which was adorned with a sign pointing you towards the great
+              ocean.
+            </p>
+          </div>
+          <div class="cities__city" id="city-khabarovsk">
+            <div
+              class="cities__video-container cities__video-container_name_khabarovsk"
+            ></div>
+            <p class="cities__text">
+              You're starting to think you'll most likely spend the rest of your
+              life in the train when Khabarovsk appears on the horizon. You
+              already know more about your fellow passengers than about your
+              family members. Anyway, only some 800 kilometers more to go, and
+              you'll be arriving in Vladivostok.
+            </p>
+          </div>
+          <div class="cities__city" id="city-vladivostok">
+            <div
+              class="cities__video-container cities__video-container_name_vladivostok"
+            >
+              <div class="cities__video-title">Vladivostok</div>
+            </div>
+            <p class="cities__text">
+              This has been an extraordinary journey. Everyone has their very
+              own story to tell, but anyone who undertakes this journey is a
+              different person to the one who started it.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="iframes">
+        <div class="iframes__container">
+          <div class="iframe iframe__weather">
+            <div class="iframe__title">Check the route weather ⟶</div>
+            <div class="iframe__item"></div>
+          </div>
+          <div class="iframe iframe__music">
+            <div class="iframe__title">Listen to music ⟶</div>
+            <div class="iframe__item">
+              <!--insert iframe here-->
+              <iframe
+                style="border-radius:12px border: 1px solid red;"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1E8DOQFCgiF1oS?utm_source=generator"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="iframe iframe__books">
+            <div class="iframe__title">Read something cool ⟶</div>
+            <div class="iframe__item">
+              <!--insert iframe here-->
+              <iframe
+                type="text/html"
+                width="336"
+                height="550"
+                frameborder="0"
+                allowfullscreen
+                style="max-width: 100%"
+                src="https://read.amazon.com/kp/card?asin=B005M2AHWM&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_oo3HFb3VS6TAM"
+              ></iframe>
+            </div>
+          </div>
+          <div class="iframe iframe__map">
+            <div class="iframe__title">Route map ⟶</div>
+            <div class="iframe__item">
+              <!--insert iframe here-->
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1OKHStriur0RW_vC5G2xAAd5ZsRiGDJFV&ehbc=2E312F"
+                width="640"
+                height="480"
+              ></iframe>
+            </div>
+          </div>
+          <div class="iframe iframe__social">
+            <div class="iframe__title">My post on social ⟶</div>
+            <div class="iframe__item">
+              <!--insert iframe here-->
+              <iframe
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FPracticumUSA%2Fposts%2Fpfbid0FZ1xCkNdD1xtLjso2PNZy9FEnBezmw7gMtPZ4pH2hzf1oL6zkKNsqPAJmUSpahLel&show_text=true&width=500"
+                width="500"
+                height="679"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
